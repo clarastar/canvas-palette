@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>mycanvas</title>
+    <link rel="stylesheet" href="mycanvas.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h2>Canvas 版画图工具</h2>
+    </div>
+</header>
+<section class="nav-bar">
+    <div class="tools">
+        <h4>工具</h4>
+        <ul class="title">
+            <li><button id="fline">画笔</button></li>
+            <li><button id="texts">文字</button>
+            </li>
+            <li><button id="erases">橡皮操</button></li>
+            <li><button id="clearc">清除</button></li>
+        </ul>
+    </div>
+
+    <div class="shapes">
+        <h4>形状</h4>
+        <ul class="title">
+            <li><button id="sline">直线</button></li>
+            <li><button id="rect">长方形</button></li>
+            <li><button id="round">圆形</button></li>
+            <li><button id="triangle">三角形</button></li>
+        </ul>
+    </div>
+
+
+    <div class="colors">
+            <h4>颜色</h4>
+        <ul class="title">
+            <li><input id="colorp" type="color" value="#ffffff"/>线条颜色</li>
+            <li><input id="colorf" type="color" value="#ffffff"/>填充颜色</li>
+        </ul>
+    </div>
+
+    <div class="fonts">
+        <h4>设置</h4>
+        <ul class="title">
+            <li>
+                <select name="fonts" >
+                    <option value="18px">字体大小</option>
+                    <option value="50px">50px</option>
+                    <option value="40px">40px</option>
+                    <option value="30px">30px</option>
+                    <option value="20px">20px</option>
+                    <option value="10px">10px</option>
+                </select>
+            </li>
+            <li>
+                <select name="fontf" >
+                    <option value="arial">arial</option>
+                    <option value="consolas">consolas</option>
+                    <option value="microsoft yahei">microsoft yahei</option>
+                </select>
+            </li>
+            <li><button id="fbold">加粗</button></li>
+            <li><button id="fitalic">斜体</button></li>
+        </ul>
+    </div>
+
+</section>
+
+<section>
+    <canvas width="1200" height="1000" id="v3"></canvas>
+    <textarea class="fields"></textarea>
+</section>
+
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/mycanvas.js"></script>
+</body>
+
+</html>
