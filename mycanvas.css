@@ -1,0 +1,58 @@
+*{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+/***页面头部***/
+header{
+    background:#ccc;
+    padding:20px;
+}
+
+/***画图工具选择*****/
+
+section{
+    margin:0 auto;
+    width:80%;
+    border:1px solid #ffeeee;
+    overflow:hidden;
+    position:relative;
+}
+canvas{
+    border:10px solid #ddd;
+    cursor:pointer;
+}
+h4{
+    width:80%;
+    padding:6px;
+    border-bottom: 2px solid #ddd;
+}
+.title{
+    margin:10px;
+}
+.title>li{
+   display:inline-block;
+}
+.tools,.shapes,.colors,.fonts{
+    float:left;
+    width:23%;
+}
+.nav-bar:after{
+    display:table;
+    clear:both;
+}
+button{
+    padding:6px;
+    border-radius:3px;
+    background:#fff;
+}
+
+.fields{
+   display:none;
+    position:absolute;
+}
+select{
+    width:80px;
+    height:30px;
+}
